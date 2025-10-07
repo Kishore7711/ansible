@@ -1,0 +1,48 @@
+  ### YAML is List of Objects
+
+- name: "Kishore Balusu"
+  dob: "01-01-01"
+  age: 25
+  addresses:
+    ## Object
+  - doorno: 3-16-100/8
+    street: "Venkat Reddy"
+    city: Hyderabad
+    pin: 500013
+    type: current
+
+  - doorno: 9-4-8
+    landmark: "NTR Marg"
+    city: Anagara
+    pin: 50007
+    type: perm
+
+  skills:
+  - java
+  - DevOps
+  - cloud
+
+
+- name: "Mani kanta"
+  dob: "01-01-01"
+  age: 25
+  addresses:
+    ## Object
+  - doorno: 3-16-100/8
+    street: "Venkat Reddy"
+    city: Hyderabad
+    pin: 500013
+    type: current
+
+  - doorno: 9-4-8
+    landmark: "NTR Marg"
+    city: Anagara
+    pin: 50007
+    type: perm
+
+  - skills:
+    java
+    DevOps
+    cloud
+
+   
