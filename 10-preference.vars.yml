@@ -1,5 +1,5 @@
 - name: variable preference
-  hots: local
+  hosts: local
   connection: local
   vars:
     Name: variable from Play Level
