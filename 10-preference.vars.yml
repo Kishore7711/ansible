@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    Name: variable from Play Level
+    NAME: variable from Play Level
   # vars_files:
   # - Course.yml
   # vars_prompt:
