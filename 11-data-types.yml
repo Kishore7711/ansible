@@ -6,7 +6,7 @@
     Duration: 15    ## Number
     is_live: true   ## boolean
     # list
-    tools: [ "AWS", "DevOps", "Ansible" ]
+    tools: # [ "AWS", "DevOps", "Ansible" ]   -- this is also list
     - AWS
     - DevOps
     - Ansible
