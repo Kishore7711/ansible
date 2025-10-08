@@ -15,3 +15,7 @@
       NAME: from Task Level
     ansible.builtin.debug:
       msg: "Name :{{ NAME }}"
+
+
+
+ ## 1. "msg": "Name :from_Command_level"
