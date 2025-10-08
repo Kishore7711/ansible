@@ -3,8 +3,8 @@
   connection: local
   vars:
     Name: variable from Play Level
-  vars_files:
-  - Course.yml
+  ##vars_files:
+  ##- Course.yml
   vars_prompt:
   - name: NAME
     prompt: what is your NAME?
@@ -20,4 +20,6 @@
 
  ## 1. "msg": "Name :from_Command_level"
  ## 2.  from Task Level"
+ ## 3.  from file Level"
+
 
