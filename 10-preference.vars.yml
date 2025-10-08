@@ -5,10 +5,10 @@
     Name: variable from Play Level
   ##vars_files:
   ##- Course.yml
-  vars_prompt:
-  - name: NAME
-    prompt: what is your NAME?
-    private: false
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: what is your NAME?
+  #   private: false
   tasks:
   - name: Testing variable preference
     ## vars:
@@ -21,5 +21,7 @@
  ## 1. "msg": "Name :from_Command_level"
  ## 2.  from Task Level"
  ## 3.  from file Level"
+ ## 4.  from prompt level
+
 
 
