@@ -1,8 +1,8 @@
 - name: variable preference
   hosts: local
   connection: local
-  vars:
-    NAME: variable from Play Level
+  # vars:
+  #   NAME: variable from Play Level
   # vars_files:
   # - Course.yml
   # vars_prompt:
