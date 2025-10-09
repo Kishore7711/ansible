@@ -4,9 +4,10 @@
   tasks:
   - name: print the names
     ansible.builtin.debug:
-      msg: Hi Hello.. {{ item }} welcome to DevOps & AWS.... Class.....     ### Here item is Reserved Key word....
+      msg: "Hi Hello.. {{ item }} welcome to DevOps & AWS.... Class..... "    ### Here item is Reserved Key word....
     loop:
     - KISHORE
     - PRASAD
     - PRAVEEN
     - NAVEEN
+    - MURALI
