@@ -1,0 +1,12 @@
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the names
+    ansible.builtin.debug:
+      msg: "Hi Hello.. {{ item }} welcome to DevOps & AWS "    ### Here item is Reserved Key word....
+    loop:
+    - KISHORE
+    - PRASAD
+    - PRAVEEN
+    - NAVEEN
