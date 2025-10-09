@@ -1,0 +1,13 @@
+- name: install the packages
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: print the names
+    ansible.builtin.Package:
+      name: "{{item }}"  ### Here item is Reserved Key word....
+      state: latest
+    loop:
+    - nginx
+    - mysql
+    - zip
