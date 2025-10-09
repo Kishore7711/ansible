@@ -4,7 +4,7 @@
   become: yes
   tasks:
   - name: install packages
-    ansible.builtin.Package:
+    ansible.builtin.package:
       name: "{{ item }}"  ### Here item is Reserved Key word....
       state: latest
     loop:
