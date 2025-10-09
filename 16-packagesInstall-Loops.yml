@@ -3,7 +3,7 @@
   connection: local
   become: yes
   tasks:
-  - name: print the names
+  - name: install packages
     ansible.builtin.Package:
       name: "{{ item }}"  ### Here item is Reserved Key word....
       state: latest
