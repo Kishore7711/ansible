@@ -9,7 +9,7 @@
       Application: payment
       Environment: dev
 
-      listTags:
+    listTags:
       - key: Application
         value: payment
       - key: Environment
