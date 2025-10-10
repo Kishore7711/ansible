@@ -4,4 +4,4 @@
   tasks:
   - name: default variable
     ansible.builtin.debug:
-      msg: " HELLO HII {{ name | default ('KISHORE') }}"
+      msg: " HELLO HII {{ name | default ('KISHORE') welcome to our AWS Setions }}"
