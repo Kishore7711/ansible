@@ -37,7 +37,7 @@
       msg: "ListTags are : {{ listTags | items2dict }}"
 
   - name: read yaml file and take it into variable
-    ansible.builtin.set_fact:
+    ansible.builtin.set_fact:                 ### set_fact is define the variables.. through dynamic...
       student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}" ## lookup is function... read the student_yaml file take it into student_yaml variable
 
   - name: convert yaml into json
@@ -62,3 +62,15 @@
   - name: check ip address is valid or not
     ansible.builtin.debug:
       msg: "{{ ipaddress | ansible.utils.ipv4 }}"         ### here | ansible.utils.ipv4 is filter.. it's  required some Libraries (netaddr) ( if one programm executes... want to dependencies  ) so wea are download it...   pip3.9 install netaddr 
+
+
+  - name: grep for root
+    ansisble.builtin.command: cat /etc/passwd | grep root    
+    register: command_output                                ### one command execute chesi output ni variable lo ki tisukovali antee...
+
+  - name: prit the command_output
+    ansible.builtin.debug:
+      msg: "ROOT P/w is : {{ command_output}}"
+
+
+      
