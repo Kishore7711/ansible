@@ -80,3 +80,12 @@
   - name: print the redirect_output
     ansible.builtin.debug:
       msg: "OutPut of : {{ redirect_output }}"
+
+  ## Command line 
+  - name: redirect the output
+    ansible.builtin.command: ls -ltr
+    register: redirect_output
+
+  - name: print the redirect_output
+    ansible.builtin.debug:
+      msg: "OutPut of : {{ redirect_output }}"
