@@ -64,9 +64,19 @@
       msg: "{{ ipaddress | ansible.utils.ipv4 }}"         ### here | ansible.utils.ipv4 is filter.. it's  required some Libraries (netaddr) ( if one programm executes... want to dependencies  ) so wea are download it... pip3.9 install netaddr
  
   - name: grep for root
+    ## ansible.builtin.command: cat /etc/passwd | grep root
     ansible.builtin.shell: cat /etc/passwd | grep root    
     register: command_output                                ### one command execute chesi output ni variable lo ki tisukovali antee...
 
   - name: prit the ROOT Details on command_output
     ansible.builtin.debug:
       msg: "{{ command_output }}"   
+
+    ## Rediractions
+  - name: redirect the output
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
+    register: redirect_output
+
+  - name: print the redirect_output
+    ansible.builtin.debug:
+      msg: "OutPut of : {{ redirect_output }}"
