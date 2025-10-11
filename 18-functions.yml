@@ -5,7 +5,8 @@
     technologies: DevOps, Linux, Shell, Ansible ## this is string
     name: kishore balusu
     Email_Id: Info@Gmail.COM
-    ipaddress: 489.9854.54851.6542
+    ## ipaddress: 489.9854.54851.6542        ## actual ip range is 255.255.255.255
+    ipaddress: 184.12.35.24
 
     ## dictionary == map
     tags:
@@ -60,4 +61,4 @@
 
   - name: check ip address is valid or not
     ansible.builtin.debug:
-      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"         ### here | ansible.utils.ipv4 is filter.. it's  required some Libraries (netaddr) ( if one programm executes... want to dependencies  ) so wea are download it...   pip3.9 install netaddr 
