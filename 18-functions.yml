@@ -86,6 +86,6 @@
     ansible.builtin.command: ls -ltr
     register: redirect_output
 
-  - name: print the redirect_output
+  - name: print the OutPut of redirect_output
     ansible.builtin.debug:
-      msg: "OutPut of : {{ redirect_output }}"
+      msg:  "{{ redirect_output }}"
