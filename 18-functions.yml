@@ -65,7 +65,7 @@
 
 
   - name: grep for root
-    ansisble.builtin.command: cat /etc/passwd | grep root    
+    ansisble.builtin.shell: cat /etc/passwd | grep root    
     register: command_output                                ### one command execute chesi output ni variable lo ki tisukovali antee...
 
   - name: prit the command_output
