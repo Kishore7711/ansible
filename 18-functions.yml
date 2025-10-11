@@ -4,6 +4,7 @@
   vars:
     technologies: DevOps, Linux, Shell, Ansible ## this is string
     name: kishore balusu
+    Email_Id: Info@Gmail.COM
 
     ## dictionary == map
     tags:
@@ -51,3 +52,7 @@
   - name: convert UPPERCASE
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
+
+  - name: convert lowercase
+    ansible.builtin.debug:
+      msg: "{{ Email_Id | lowercase }}"
