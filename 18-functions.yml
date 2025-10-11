@@ -70,7 +70,7 @@
 
   - name: prit the command_output
     ansible.builtin.debug:
-      msg: "ROOT P/w is : {{ command_output}}"
+      msg: "ROOT Details are : {{ command_output }}"
 
 
       
