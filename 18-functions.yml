@@ -79,7 +79,7 @@
 
   - name: print the redirect_output
     ansible.builtin.debug:
-      msg: "OutPut of : {{ redirect_output }}"
+      msg: "{{ redirect_output }}"
 
   # ## Command line 
   # - name: redirect the output
